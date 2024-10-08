@@ -15,6 +15,11 @@ mimir-distributed:
   alertmanager:
     enabled: false
 
+  compactor:
+    replicas: 0
+    persistentVolume:
+      enabled: false
+
   ruler:
     enabled: false
 

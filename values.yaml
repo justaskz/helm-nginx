@@ -1,6 +1,5 @@
 ---
 name: demo
-replicaCount: 3
 
 # mimir:
 #   structuredConfig:
