@@ -12,8 +12,13 @@ query_frontend:
   replicas: 0
 querier:
   replicas: 0
+store_gateway:
+  replicase: 0
 
 ingester:
+  replicas: 0
+
+compactor:
   replicas: 0
 
 alertmanager:
