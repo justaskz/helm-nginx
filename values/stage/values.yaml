@@ -4,3 +4,6 @@ name: stage
 mimir-distributed:
   gateway:
     replicas: 1
+
+  ruler:
+    enabled: true

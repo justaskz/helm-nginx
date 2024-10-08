@@ -4,6 +4,10 @@ name: demo
 mimir-distributed:
   gateway:
     replicas: 0
+    enabledNonEnterprise: true
+    ingress:
+      enabled: false
+
   query_frontend:
     replicas: 0
   query_scheduler:
