@@ -1,2 +1,14 @@
 ---
 name: stage
+
+alertmanager:
+  enabled: false
+
+ruler:
+  enabled: false
+
+minio:
+  enabled: false
+
+nginx:
+  enabled: false
