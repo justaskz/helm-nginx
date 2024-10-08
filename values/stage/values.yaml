@@ -9,6 +9,8 @@ mimir-distributed:
   querier:
     replicas: 0
 
+  distributor:
+    replicas: 0
   ingester:
     replicas: 0
 
