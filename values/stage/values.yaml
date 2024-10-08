@@ -6,4 +6,4 @@ mimir-distributed:
     replicas: 1
 
   ruler:
-    enabled: true
+    enabled: false
