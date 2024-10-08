@@ -15,10 +15,27 @@ mimir-distributed:
   alertmanager:
     enabled: false
 
+  store_gateway:
+    replicas: 0
+    persistentVolume:
+      enabled: false
+    extraVolumes:
+      - name: data
+        emptyDir: {}
+    extraVolumeMounts:
+      - name: data
+        mountPath: /blocks
+
   compactor:
     replicas: 0
     persistentVolume:
       enabled: false
+    extraVolumes:
+      - name: data
+        emptyDir: {}
+    extraVolumeMounts:
+      - name: data
+        mountPath: /blocks
 
   ruler:
     enabled: false
