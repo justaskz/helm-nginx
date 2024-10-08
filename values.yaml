@@ -1,6 +1,11 @@
 ---
 name: demo
 
+mimir:
+  structuredConfig:
+    blocks_storage:
+      backend: filesystem
+
 gateway:
   replicas: 0
 query_frontend:
