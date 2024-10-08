@@ -1,11 +1,11 @@
 ---
 apiVersion: v2
-name: nginx
-description: desc nginx
+name: mimir
+description: desc
 type: application
 version: 0.0.1
 
 dependencies:
-  - name: nginx
-    repository: https://charts.bitnami.com/bitnami
-    version: 18.2.2
+  - name: mimir-distributed
+    version: 5.4.1
+    repository: https://grafana.github.io/helm-charts
