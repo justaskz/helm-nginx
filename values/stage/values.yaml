@@ -6,6 +6,8 @@ mimir-distributed:
     replicas: 0
   query_frontend:
     replicas: 0
+  query_scheduler:
+    replicas: 0
   querier:
     replicas: 0
 
