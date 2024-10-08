@@ -1,2 +1,24 @@
 ---
 name: stage
+
+gateway:
+  replicas: 0
+query_frontend:
+  replicas: 0
+querier:
+  replicas: 0
+
+ingester:
+  replicas: 0
+
+alertmanager:
+  enabled: false
+
+ruler:
+  enabled: false
+
+minio:
+  enabled: false
+
+nginx:
+  enabled: false
