@@ -6,10 +6,10 @@ type: application
 version: 0.0.1
 
 dependencies:
-  - name: nginx
-    version: 18.2.2
-    repository: https://charts.bitnami.com/bitnami
+  # - name: nginx
+  #   version: 18.2.2
+  #   repository: https://charts.bitnami.com/bitnami
 
-#   - name: mimir-distributed
-#     version: 5.4.1
-#     repository: https://grafana.github.io/helm-charts
+  - name: mimir-distributed
+    version: 5.4.1
+    repository: https://grafana.github.io/helm-charts
