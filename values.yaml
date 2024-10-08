@@ -1,34 +1,51 @@
 ---
 name: demo
 
-# mimir:
-#   structuredConfig:
-#     blocks_storage:
-#       backend: filesystem
+mimir-distributed:
+  gateway:
+    replicas: 0
+  query_frontend:
+    replicas: 0
+  query_scheduler:
+    replicas: 0
+  querier:
+    replicas: 0
 
-# gateway:
-#   replicas: 0
-# query_frontend:
-#   replicas: 0
-# querier:
-#   replicas: 0
-# store_gateway:
-#   replicase: 0
+  distributor:
+    replicas: 0
+  ingester:
+    replicas: 0
 
-# ingester:
-#   replicas: 0
+  store_gateway:
+    replicas: 0
+    persistentVolume:
+      enabled: false
+    extraVolumes:
+      - name: data
+        emptyDir: {}
+    extraVolumeMounts:
+      - name: data
+        mountPath: /blocks
 
-# compactor:
-#   replicas: 0
+  compactor:
+    replicas: 0
+    persistentVolume:
+      enabled: false
+    extraVolumes:
+      - name: data
+        emptyDir: {}
+    extraVolumeMounts:
+      - name: data
+        mountPath: /blocks
 
-# alertmanager:
-#   enabled: false
+  alertmanager:
+    enabled: false
 
-# ruler:
-#   enabled: false
+  ruler:
+    enabled: false
 
-# minio:
-#   enabled: false
+  minio:
+    enabled: false
 
-# nginx:
-#   enabled: false
+  nginx:
+    enabled: false
