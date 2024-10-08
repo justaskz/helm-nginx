@@ -1,6 +1,7 @@
 ---
 name: stage
-replicaCount: 10
+nginx:
+  replicaCount: 10
 
 # gateway:
 #   replicas: 0
